@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="flex flex-wrap items-center gap-3 px-4 py-2">
+      <!-- Search + Filters group -->
+      <div class="w-full flex flex-wrap items-center gap-3">
+        <!-- Search Bar -->
+        <div
+          class="w-full sm:w-[60%] md:w-[40%] lg:w-[30%] border border-gray-200 rounded-full relative"
+        >
+          <input
+            type="text"
+            placeholder="Enter an address, city, neighborhood or ZIP code"
+            class="w-full h-full p-3 placeholder:text-sm placeholder:font-semibold rounded-full"
+          />
+          <img
+            src="/images/search-icon.png"
+            class="w-6 h-6 absolute right-2 top-1/2 -translate-y-1/2"
+          />
+        </div>
+
+        <!-- Filters -->
+        <div class="flex flex-wrap gap-3 items-center">
+          <div
+            class="border border-gray-200 rounded-full flex items-center p-2"
+          >
+            <select class="rounded-full appearance-none">
+              <option>For Sale</option>
+            </select>
+            <img src="/images/down.png" class="w-6 h-6" />
+          </div>
+
+          <div
+            class="border border-gray-200 rounded-full flex items-center p-2"
+          >
+            <select class="rounded-full appearance-none">
+              <option>Property Type</option>
+            </select>
+            <img src="/images/down.png" class="w-6 h-6" />
+          </div>
+
+          <div
+            class="border border-gray-200 rounded-full flex items-center p-2"
+          >
+            <select class="rounded-full appearance-none">
+              <option>Price</option>
+            </select>
+            <img src="/images/down.png" class="w-6 h-6" />
+          </div>
+
+          <div
+            class="border border-gray-200 rounded-full flex items-center p-2"
+          >
+            <select class="rounded-full appearance-none">
+              <option>Beds / Baths</option>
+            </select>
+            <img src="/images/down.png" class="w-6 h-6" />
+          </div>
+
+          <div
+            class="border border-gray-200 rounded-full flex items-center gap-2 px-4 py-2 cursor-pointer"
+          >
+            <img src="/images/filter-icon.png" class="w-4 h-4" />
+            <span>Filters</span>
+          </div>
+        </div>
+
+        <!-- Save Search -->
+        <button class="bg-blue-700 text-white px-4 py-2 rounded-full">
+          Save Search
+        </button>
+
+        <!-- List / Map Buttons -->
+        <div
+          class="flex items-center justify-center gap-2 border border-gray-200 rounded-full p-1 w-fit min-[1318px]:absolute min-[1318px]:right-4"
+        >
+          <button class="px-4 py-1 rounded-full bg-blue-700 text-white">
+            List
+          </button>
+          <button
+            class="px-4 py-1 rounded-full text-gray-600 hover:bg-gray-100"
+          >
+            Map
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
